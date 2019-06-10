@@ -1,5 +1,5 @@
 /**
-* @File: linkedlist.go
+* @File: list.go
 * @Author: wongxinjie
 * @Date: 2019/6/8
 */

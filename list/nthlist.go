@@ -5,7 +5,7 @@
 */
 package main
 
-import "github.com/wongxinjie/cracking-interview/linkedlist/linkedlist"
+import "github.com/wongxinjie/cracking-interview/list/linkedlist"
 
 
 func ntplist(l *linkedlist.LinkedList, k int) int{

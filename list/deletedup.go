@@ -7,7 +7,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/wongxinjie/cracking-interview/linkedlist/linkedlist"
+	"github.com/wongxinjie/cracking-interview/list/linkedlist"
 )
 
 func deleteDup(l *linkedlist.LinkedList) {
