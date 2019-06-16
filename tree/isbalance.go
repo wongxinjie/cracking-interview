@@ -9,10 +9,10 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/wongxinjie/cracking-interview/tree/tree"
+	"github.com/wongxinjie/cracking-interview/tree/treenode"
 )
 
-func IsBalance(t *tree.BinaryTree) bool {
+func IsBalance(t *treenode.BinaryTree) bool {
 	if checkHeight(t) == -1 {
 		return false
 	}
@@ -21,7 +21,7 @@ func IsBalance(t *tree.BinaryTree) bool {
 }
 
 
-func checkHeight(root *tree.BinaryTree) int {
+func checkHeight(root *treenode.BinaryTree) int {
 	if root == nil {
 		return 0
 	}
@@ -46,11 +46,11 @@ func checkHeight(root *tree.BinaryTree) int {
 
 
 func main() {
-	root := tree.BinaryTree{1, nil, nil }
-	root.Left = &tree.BinaryTree{2, nil, nil}
-	root.Right = &tree.BinaryTree{3, nil, nil }
+	root := treenode.BinaryTree{1, nil, nil }
+	root.Left = &treenode.BinaryTree{2, nil, nil}
+	root.Right = &treenode.BinaryTree{3, nil, nil }
 
-	root.Left.Left = &tree.BinaryTree{1, nil, nil}
-	root.Left.Left.Left = &tree.BinaryTree{4, nil, nil}
+	root.Left.Left = &treenode.BinaryTree{1, nil, nil}
+	root.Left.Left.Left = &treenode.BinaryTree{4, nil, nil}
 	fmt.Println(IsBalance(&root))
 }
