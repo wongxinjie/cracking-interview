@@ -5,5 +5,5 @@
 */
 package common
 
-var MAX_INT = int(^uint(0) >> 1)
-var MIN_INT	 = -MAX_INT - 1
+const MAX_INT = int(^uint(0) >> 1)
+const MIN_INT	 = -MAX_INT - 1
